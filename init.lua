@@ -8,24 +8,24 @@ skins = {}
 skins.modpath = minetest.get_modpath(minetest.get_current_modname())
 skins.default = "character"
 
-dofile(skins.modpath.."/skin_meta_api.lua")
-dofile(skins.modpath.."/api.lua")
-dofile(skins.modpath.."/skinlist.lua")
-dofile(skins.modpath.."/formspecs.lua")
-dofile(skins.modpath.."/chatcommands.lua")
+dofile(skins.modpath .. "/skin_meta_api.lua")
+dofile(skins.modpath .. "/api.lua")
+dofile(skins.modpath .. "/skinlist.lua")
+dofile(skins.modpath .. "/formspecs.lua")
+dofile(skins.modpath .. "/chatcommands.lua")
 -- Unified inventory page/integration
 if minetest.get_modpath("unified_inventory") then
-	dofile(skins.modpath.."/unified_inventory_page.lua")
+	dofile(skins.modpath .. "/unified_inventory_page.lua")
 end
 
 if minetest.get_modpath("sfinv") then
-	dofile(skins.modpath.."/sfinv_page.lua")
+	dofile(skins.modpath .. "/sfinv_page.lua")
 end
 
 -- ie.loadfile does not exist?
 skins.ie = minetest.request_insecure_environment()
 skins.http = minetest.request_http_api()
-dofile(skins.modpath.."/skins_updater.lua")
+dofile(skins.modpath .. "/skins_updater.lua")
 skins.ie = nil
 skins.http = nil
 
@@ -81,16 +81,16 @@ player_api.register_model("skinsdb_3d_armor_character_5.b3d", {
 		"blank.png"
 	},
 	animations = {
-		stand = {x=0, y=79},
-		lay = {x=162, y=166},
-		walk = {x=168, y=187},
-		mine = {x=189, y=198},
-		walk_mine = {x=200, y=219},
-		sit = {x=81, y=160},
+		stand = { x = 0, y = 79 },
+		lay = { x = 162, y = 166 },
+		walk = { x = 168, y = 187 },
+		mine = { x = 189, y = 198 },
+		walk_mine = { x = 200, y = 219 },
+		sit = { x = 81, y = 160 },
 		-- compatibility w/ the emote mod
-		wave = {x = 192, y = 196, override_local = true},
-		point = {x = 196, y = 196, override_local = true},
-		freeze = {x = 205, y = 205, override_local = true},
+		wave = { x = 192, y = 196, override_local = true },
+		point = { x = 196, y = 196, override_local = true },
+		freeze = { x = 205, y = 205, override_local = true },
 	},
 })
 
@@ -101,7 +101,7 @@ if not default_skin_obj then
 	default_skin_obj:set_texture("character.png")
 	default_skin_obj:set_meta("format", '1.0')
 	default_skin_obj:set_meta("_sort_id", 0)
-	default_skin_obj:set_meta("name", "Sam")
+	default_skin_obj:set_meta("name", "Pepe")
 	default_skin_obj:set_hand_from_texture()
 end
 
