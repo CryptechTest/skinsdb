@@ -14,13 +14,13 @@ dofile(skins.modpath .. "/skinlist.lua")
 dofile(skins.modpath .. "/formspecs.lua")
 dofile(skins.modpath .. "/chatcommands.lua")
 -- Unified inventory page/integration
-if minetest.get_modpath("unified_inventory") then
-	dofile(skins.modpath .. "/unified_inventory_page.lua")
-end
+--if minetest.get_modpath("unified_inventory") then
+--	dofile(skins.modpath .. "/unified_inventory_page.lua")
+--end
 
-if minetest.get_modpath("sfinv") then
-	dofile(skins.modpath .. "/sfinv_page.lua")
-end
+--if minetest.get_modpath("sfinv") then
+--	dofile(skins.modpath .. "/sfinv_page.lua")
+--end
 
 -- ie.loadfile does not exist?
 skins.ie = minetest.request_insecure_environment()
